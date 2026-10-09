@@ -1,2 +1,2 @@
 # freecodecamp
-Projects created working through the freeCodeCamp curriculum. 
+Projects created working through the [freeCodeCamp](https://www.freecodecamp.org/) curriculum. 

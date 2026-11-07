@@ -1,0 +1,61 @@
+<!--
+Build an app that is functionally similar to this example project. Try not to copy the example project, give it your own personal style.
+
+Objective: Fulfill the user stories below and get all the tests to pass to complete the lab.
+
+User Stories:
+
+You should have a main element as the only child of the body element.
+You should have an h1 element with the topic of your page.
+You should have a paragraph introducing the topic of your page below your h1 element.
+You should have three section elements below your first paragraph.
+Each section should contain an h2 element, a paragraph, and an iframe element, in this order.
+The three iframe elements should have a src attribute set to a valid video.
+Each iframe element should also have a title attribute to describe the embedded content, and a height attribute and a width attribute to set the element to a proper size.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+
+<body>
+<main>
+    <h1>Understanding the Linux Operating System</h1>
+    <p>Linux differs in many ways from Windows and while it can be daunting approaching it for the first time, it isn't impossible to understand.</p>
+    <section>
+        <h2>Linux Overview</h2>
+        <p>Learn about the history around the development of Linux, as well as some basics for using the operating system.</p>
+        <iframe
+            title="Linux in 100 seconds"
+            height="315"
+            width="640"
+            src="https://www.youtube.com/embed/rrB13utjYV4?si=hHBDL3epQV-o0DL2"
+        ></iframe>
+    </section>
+    <section>
+        <h2>The Linux File System</h2>
+        <p>Learn about how the Linux file system works, how to interact with it, and how the file system is structured.</p>
+        <iframe
+            title="Linux Directories Explained in 100 Seconds"
+            height="315"
+            width="640"
+            src="https://www.youtube.com/embed/42iQKuQodW4?si=PMXPcb5Ybg0URhAd"
+        ></iframe>
+    </section>
+    <section>
+        <h2>The Bourne-Again Shell (Bash)</h2>
+        <p>Learn about shells, how they work, and how to use Bash in particular.</p>
+        <iframe
+            title="Bash in 100 Seconds"
+            height="315"
+            width="640"
+            src="https://www.youtube.com/embed/I4EWvMFj37g?si=8K18L0Lp_pAxPS-V"
+        ></iframe>
+    </section>
+</main>
+</body>
+
+</html>

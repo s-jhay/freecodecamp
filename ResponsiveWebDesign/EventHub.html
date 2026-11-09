@@ -1,0 +1,100 @@
+<!-- 
+Build an app that is functionally similar to this example project. Try not to copy the example project, give it your own personal style.
+
+In this lab you will utilize the semantic HTML elements to create the structure of a web page. You'll add content and images to make it look like a real event hub.
+
+Objective: Fulfill the user stories below and get all the tests to pass to complete the lab.
+
+User Stories:
+
+You should have a header element, and it must be the first element inside the body.
+
+Inside the header element, you should have an h1 element that contains the text Event Hub, and a nav element.
+
+Inside the nav element, you should have an unordered list of two items containing links to different sections of the page. The first item should have the text Upcoming Events, and the second item should have the text Past Events.
+
+Each link should be represented by an a element with an href attribute that links to the corresponding section of the page, #upcoming-events and #past-events respectively.
+
+You should have a main element that contains the different sections of the page.
+
+Inside the main element, you should have two section elements.
+
+The first section element should have an id attribute with the value upcoming-events
+
+Inside the #upcoming-events section, you should have:
+
+An h2 element with the text Upcoming Events.
+Two article elements. Each article should represent an event, and it should have :
+An h3 element for the event title.
+A p element for the event description. You can add a date at the bottom if you like.
+The second section element should have an id attribute with the value past-events.
+
+Inside the #past-events section, you should have:
+
+An h2 element with the text Past Events.
+Two article elements. Each article element should represent a past event, and it should have:
+An h3 element for the event title,
+A p element for the event description. You can add a date at the bottom if you like.
+An image element with the src attribute pointing to an image file and the alt attribute with a description of the image.
+Note: You can use any text for the event descriptions and dates. You can use the following image URLs for the images if you like:
+
+https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg.
+https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Event Hub</title>
+</head>
+
+<body>
+    <header>
+        <h1>Event Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#upcoming-events">Upcoming Events</a></li>
+                <li><a href="#past-events">Past Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <article>
+                <h3>Hot Air Balloon Rides</h3>
+                <p>Enjoy a scenic and peaceful ride floating across the countryside.</p>
+                <p>Date: <time datetime="2026-08-15">August 21<sup>st</sup>, 2026</time></p>
+            </article>
+            <article>
+                <h3>Blue Angels Show</h3>
+                <p>Come see the Blue Angels and watch them perform death-defying stunts.</p>
+                <p>Date: <time datetime="2026-08-15">August 22<sup>nd</sup>, 2026</time></p>
+            </article>
+        </section>
+        <section id="past-events">
+            <h2>Past Events</h2>
+            <article>
+                <h3>Sky Diving</h3>
+                <p>Fun at 10,000 feet, for those seeking a thrill.</p>
+                <p>Date: <time datetime="2026-08-15">August 15<sup>th</sup>, 2026</time></p>
+                <img 
+                  src="https://images.unsplash.com/photo-1659221876406-31a3746f41b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" 
+                  height="315" 
+                  alt="An image of two people tandem skydiving">
+            </article>
+            <article>
+                <h3>Air Race</h3>
+                <p>Come and watch pilots pit their skills and planes against each other.</p>
+                <p>Date: <time datetime="2026-08-15">August 16<sup>th</sup>, 2026</time></p>
+                <img 
+                  src="https://images.unsplash.com/photo-1762347159296-e8bbcfd7d108?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" 
+                  height="315" 
+                  alt="Two planes flying towards each other in a stunt">
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

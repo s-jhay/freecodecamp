@@ -1,0 +1,2 @@
+- Create project, lab, and workshop directories
+- Document differences between different directories

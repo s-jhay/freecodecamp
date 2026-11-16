@@ -1,0 +1,149 @@
+<!--
+Build an app that is functionally similar to this example project. Try not to copy the example project, give it your own personal style.
+
+Objective: Fulfill the user stories below and get all the tests to pass to complete the lab.
+
+User Stories:
+
+You should have a page title in an h1 element with an id of title.
+You should have a short explanation in a p element with an id of description.
+You should have a form element with an id of survey-form.
+Inside the form element you should have a required input field to enter your name that has an id of name and a type of text.
+Inside the form element you should have a required input field to enter your email that has an id of email.
+If you enter an email that is not formatted correctly, you should see an HTML5 validation error.
+Inside the form element you should have an input field to enter a number that has an id of number.
+The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser).
+If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you should see an HTML5 validation error.
+For the name, email, and number input fields, you should have corresponding label elements in the form, that describe the purpose of each field with the following ids: name-label, email-label, and number-label.
+For the name, email, and number input fields, you should have a placeholder text that gives a description or instructions for each field.
+Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from.
+Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute.
+Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute.
+Inside the form element, you should have a textarea for additional comments.
+Inside the form element, you should have a button with id of submit to submit all the inputs.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">2026 Git Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us understand contributor needs and help improve our codebase.</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <legend>Contributor Information</legend>
+
+        <label id="name-label" for="name">Git Username (Required)</label>
+        <br>
+        <input id="name" name="name" type="text" required placeholder="e.g. username">
+
+        <br>
+
+        <label id="email-label" for="email">Email Address (Required)</label>
+        <br>
+        <input id="email" name="email" type="email" required placeholder="e.g. bob@email.com">
+
+        <br>
+
+        <label id="number-label" for="number">Years of Experience using Git</label>
+        <br>
+        <input id="number" name="number" type="number" min="0" max="21" placeholder="e.g. 1">
+      </fieldset>
+
+      <fieldset>
+        <legend>Survey Questions</legend>
+        <label for="dropdown">Which role are you currently serving?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="" selected></option>
+          <option value="administrator">Administrator</optiproceedingon>
+          <option value="contributor">Contributor</option>
+        </select>
+
+        <br>
+
+        <p>Select all projects that you're currently involved with:</p>
+        <input id="project-option-1" type="checkbox" name="project-option-1" value="1">
+        <label for="project-option-1">Project 1</label>
+        <br>
+        <input id="project-option-2" type="checkbox" name="project-option-2" value="2">
+        <label for="project-option-2">Project 2</label>
+        <br>
+        <input id="project-option-3" type="checkbox" name="project-option-3" value="3">
+        <label for="project-option-3">Project 3</label>
+        <br>
+        <input id="project-option-4" type="checkbox" name="project-option-4" value="4">
+        <label for="project-option-4">Project 4</label>
+
+        <br>
+
+        <p>Please match your experience level with the following Git concepts with the options given:</p>
+        
+        <label for="concept-1">1. Resolving merge conflicts</label>
+        <br>
+        <input id="concept-1-a-1" name="concept-1" type="radio" value="0">
+        <label for="concept-1-a-1">No experience</label>
+        <input id="concept-1-a-2" name="concept-1" type="radio" value="1">
+        <label for="concept-1-a-2">Limited experience</label>
+        <input id="concept-1-a-3" name="concept-1" type="radio" value="2">
+        <label for="concept-1-a-3">Some experience</label>
+        <input id="concept-1-a-4" name="concept-1" type="radio" value="3">
+        <label for="concept-1-a-4">More experience</label>
+
+        <br><br>
+
+        <label for="concept-2">2. Rebasing branches</label>
+        <br>
+        <input id="concept-2-a-1" name="concept-2" type="radio" value="0">
+        <label for="concept-2-a-1">No experience</label>
+        <input id="concept-2-a-2" name="concept-2" type="radio" value="1">
+        <label for="concept-2-a-2">Limited experience</label>
+        <input id="concept-2-a-3" name="concept-2" type="radio" value="2">
+        <label for="concept-2-a-3">Some experience</label>
+        <input id="concept-2-a-4" name="concept-2" type="radio" value="3">
+        <label for="concept-2-a-4">More experience</label>
+
+        <br><br>
+
+        <label for="concept-3">3. Reverting branches</label>
+        <br>
+        <input id="concept-3-a-1" name="concept-3" type="radio" value="0">
+        <label for="concept-3-a-1">No experience</label>
+        <input id="concept-3-a-2" name="concept-3"type="radio" value="1">
+        <label for="concept-3-a-2">Limited experience</label>
+        <input id="concept-3-a-3" name="concept-3" type="radio" value="2">
+        <label for="concept-3-a-3">Some experience</label>
+        <input id="concept-3-a-4" name="concept-3" type="radio" value="3">
+        <label for="concept-3-a-4">More experience</label>
+
+        <br><br>
+
+        <label for="concept-4">4. Resetting branches</label>
+        <br>
+        <input id="concept-4-a-1" name="concept-4" type="radio" value="0">
+        <label for="concept-4-a-1">No experience</label>
+        <input id="concept-4-a-2" name="concept-4" type="radio" value="1">
+        <label for="concept-4-a-2">Limited experience</label>
+        <input id="concept-4-a-3" name="concept-4" type="radio" value="2">
+        <label for="concept-4-a-3">Some experience</label>
+        <input id="concept-4-a-4" name="concept-4" type="radio" value="3">
+        <label for="concept-4-a-4">More experience</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Feedback</legend>
+        <p>Please share any additional feedback with us you wish to that wasn't covered above:</p>
+        <textarea cols="60" rows="5" ></textarea>
+      </fieldset>
+
+      <br>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+    
+  </body>
+</html>

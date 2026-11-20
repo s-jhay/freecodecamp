@@ -1,0 +1,54 @@
+<!--
+Objective: Fulfill the user stories below and get all the tests to pass to complete the lab.
+
+User Stories:
+
+You should have a div element with a class of blog-post-card to hold all of your card elements.
+Within the .blog-post-card element, you should have an image element with a valid alt attribute and text, and a class of post-img. You can use https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg for the src attribute of the image.
+You should have a div with a class of post-content within the .blog-post-card element with the following:
+An h2 element with a class of post-title and text for the title of your blog post.
+A p element with a class of post-excerpt and text to summarize your blog post.
+An a element with a class of read-more with the text Read More.
+You should set the body element's background color to a value other than white.
+You should apply the following styles to the .blog-post-card element:
+A white background.
+Rounded corners.
+A width of your choice.
+The text alignment of your choice.
+The .post-img element should be styled so that the image fills the card's entire width and has a bottom border.
+The .post-content element should be styled so that there is padding inside the card.
+The .post-title and .post-excerpt elements should have a text color other than the default and margins on all sides.
+The .read-more element should be styled like a button and have:
+A text color other than the default.
+A background color.
+Margins on all sides.
+Padding on all sides.
+Rounded corners.
+A display property set to inline-block.
+A hover effect that changes its background color.
+Note: Be sure to link your stylesheet in your HTML and apply your CSS.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Blog Post Card</title>
+</head>
+<body>
+    <div class="blog-post-card">
+        <img class="post-img" src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg" alt="Side profile of a laptop opened on a table with a document opened as someone's hands in view type on its keyboard." />
+        <div class="post-content">
+            <h2 class="post-title">2026 Online Story Writing Workshop</h2>
+            <p class="post-excerpt">
+                Come bring your ideas and we'll help you bring them to life 
+                - join us over a weekend with major names in the writing 
+                community as they share their insights into creating stories that 
+                capture the imagination of their readers.
+            </p>
+            <a class="read-more">Read More</a>
+        </div>
+    </div>
+</body>
+</html>

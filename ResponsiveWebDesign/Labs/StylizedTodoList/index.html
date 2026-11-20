@@ -1,0 +1,92 @@
+<!--
+Objective: Fulfill the user stories below and get all the tests to pass to complete the lab.
+
+User Stories:
+
+You should have one unordered list with the class todo-list.
+
+Inside the unordered list, you should have four list items.
+
+Inside each list item, there should be:
+
+An input element with the type checkbox and id set to a unique value.
+A label element with the for attribute set to the corresponding input element's id.
+An unordered list with the class sub-item.
+A list item with an anchor element in it. The anchor should have the class sub-item-link, a valid href value, and a target value that makes the link open in a new tab.
+Your a elements should not have any text decorations.
+
+You should set the text color of unvisited links to a color of your choice.
+
+When your links are visited, the color should change to another color of your choice.
+
+When your links are hovered over, the color should change to another color of your choice.
+
+When your links are focused, there should be a colored outline around the link.
+
+When your links are clicked, the color should change to another color of your choice.
+
+Note: Be sure to link your stylesheet in your HTML and apply your CSS.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="checklist">
+        <h1>New Tenant Move-in Checklist</h1>
+        <p>Please complete the following within the first two weeks of your lease start date:</p>
+        <ul class="todo-list">
+            <li class="todo-list-item odd-row">
+                <input type="checkbox" id="checkbox-1">
+                <label for="checkbox-1">Set up electric service</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="#" target="_blank">
+                            Sparky Energy service setup
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="todo-list-item even-row">
+                <input type="checkbox" id="checkbox-2">
+                <label for="checkbox-2">Set up water service</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="#" target="_blank">
+                            Flushwide service registration
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="todo-list-item odd-row">
+                <input type="checkbox" id="checkbox-3">
+                <label for="checkbox-3">Set up trash service</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="#" target="_blank">
+                            Tony and Sons Gahhbage Removal signup
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="todo-list-item even-row">
+                <input type="checkbox" id="checkbox-4">
+                <label for="checkbox-4">Set up internet service</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="#" target="_blank">
+                            Costcast FIOS setup page
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

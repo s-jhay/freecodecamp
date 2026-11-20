@@ -1,0 +1,73 @@
+body {
+  background-color: LightBlue;
+  font-family: sans-serif;
+}
+
+.checklist {
+  background-color: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.todo-list-item {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.odd-row {
+  background-color: Gainsboro;
+}
+
+.even-row {
+  background-color: AliceBlue;
+}
+
+.sub-item {
+  margin-bottom: 10px;
+  
+}
+
+.sub-item li {
+  margin-top: 5px;
+  
+}
+
+/* Unused
+.sub-item-link {
+
+} 
+*/
+
+h1{
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: Teal;
+}
+
+a:hover {
+  color: LimeGreen;
+}
+
+a:active {
+  color: Cyan;
+}
+
+a:focus {
+  outline: 2px solid Tomato;
+}
+
+a:visited {
+  color: Tomato;
+}
